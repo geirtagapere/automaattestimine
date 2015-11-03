@@ -16,6 +16,11 @@ public class Testing {
 	public void testJuniorOverHour() {
 		assertEquals(100, Calc.pay(1, 9));
 	}
+	
+	@Test
+	public void testJuniorOverTwentyHours() {
+		assertEquals(350, Calc.pay(1, 21));
+	}
 
 	@Test
 	public void testSenior() {
@@ -28,6 +33,11 @@ public class Testing {
 	}
 	
 	@Test
+	public void testSeniorOverTwentyHours() {
+		assertEquals(530, Calc.pay(2, 21));
+	}
+	
+	@Test
 	public void testSpecialist() {
 		assertEquals(154, Calc.pay(3, 7));
 	}
@@ -35,5 +45,10 @@ public class Testing {
 	@Test
 	public void testSpecialistOverHour() {
 		assertEquals(264, Calc.pay(3, 10));
+	}
+	
+	@Test
+	public void testSpecialistOverTwentyHours() {
+		assertEquals(1020, Calc.pay(3, 21));
 	}
 }
