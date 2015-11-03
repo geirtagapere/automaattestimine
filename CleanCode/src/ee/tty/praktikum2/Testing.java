@@ -2,16 +2,10 @@ package ee.tty.praktikum2;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class Testing {
 	Calc calc;
-	
-	@Before
-	public void setup() {
-		calc = new Calc();
-	}
 	
 	@Test
 	public void testJunior() {
