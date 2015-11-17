@@ -10,49 +10,49 @@ public class Calc {
  
     }
 
-    protected static int payJunior(final int type,final int h) {
+    protected static int payJunior(final int type,final int hoursWorked) {
         int Sum = 0;
         if (type == JUNIOR) {
-            if (h > 8) {
-                Sum = 10 * (h - 8) * 2;
+            if (hoursWorked > 8) {
+                Sum = 10 * (hoursWorked - 8) * 2;
                 Sum += 10 * 8;
-                if (h > 20) {
+                if (hoursWorked > 20) {
                 	Sum += 10;
                 }
             } else {
-                Sum += 10 * h;
+                Sum += 10 * hoursWorked;
             }
         }
         return Sum;
     } 
     
-    protected static int paySenior(final int type,final int h) {
+    protected static int paySenior(final int type,final int hoursWorked) {
     	int Sum = 0;
     	if (type == SENIOR) {
-            if (h > 8) {
-                Sum = 15 * (h - 8) * 2;
+            if (hoursWorked > 8) {
+                Sum = 15 * (hoursWorked - 8) * 2;
                 Sum += 15 * 8;
-                if (h > 20) {
+                if (hoursWorked > 20) {
                 	Sum += 20;
                 }           
             } else {
-                Sum += 15 * h;
+                Sum += 15 * hoursWorked;
             }
         }
     	return Sum;
     }
     	
-    protected static int paySpecialist(final int type,final int h) {
+    protected static int paySpecialist(final int type,final int hoursWorked) {
     	int Sum = 0;
     	if (type == SPECIALIST) {
-            if (h > 9) {
-                Sum = 22 * (h - 9) * 3;
+            if (hoursWorked > 9) {
+                Sum = 22 * (hoursWorked - 9) * 3;
                 Sum += 22 * 9;
-                if (h > 20) {
+                if (hoursWorked > 20) {
                 	Sum += 30;
                 }
             } else {
-                Sum += 22 * h;
+                Sum += 22 * hoursWorked;
             }
         }
         return Sum;
